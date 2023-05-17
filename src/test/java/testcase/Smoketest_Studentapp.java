@@ -21,7 +21,7 @@ public class Smoketest_Studentapp extends Baseclass {
 		lp.Password().sendKeys("12345");
 		lp.Loginbutton().click();
 		Thread.sleep(2000);
-		Assert.assertEquals(driver.getCurrentUrl(), "https://dev.digilabs.ai/labs1");
+		Assert.assertEquals(driver.getCurrentUrl(), "https://dev.digilabs.ai/labs");
 		
 	}
 	
