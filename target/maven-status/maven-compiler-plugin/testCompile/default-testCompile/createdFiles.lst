@@ -9,6 +9,7 @@ testcase\Smoketest_Adminapp.class
 utility\Config.class
 pages\Groupdeleteadmin.class
 pages\Studentdeleteadmin.class
+admintestcase\Smoketest_Adminapp.class
 pages\Facultycreateadmin.class
 pages\Studentcreateadmin.class
 testcase\Smoketest_Studentapp.class
