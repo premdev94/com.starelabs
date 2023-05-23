@@ -16,8 +16,8 @@ pipeline {
                               allowMissing: false, 
                               alwaysLinkToLastBuild: false, 
                               keepAll: false, 
-                              reportDir: 'Reports', 
-                              reportFiles: 'Spark.html', 
+                              reportDir: 'https://github.com/premdev94/com.starelabs/Reports', 
+                              reportFiles: '*.html', 
                               reportName: 'ExtentReport', 
                               reportTitles: '', 
                               useWrapperFileDirectly: true])
