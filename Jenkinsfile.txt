@@ -16,7 +16,7 @@ pipeline {
                               allowMissing: false, 
                               alwaysLinkToLastBuild: false, 
                               keepAll: false, 
-                              reportDir: 'https://github.com/premdev94/com.starelabs/Reports', 
+                              reportDir: 'Reports', 
                               reportFiles: '*.html', 
                               reportName: 'ExtentReport', 
                               reportTitles: '', 
