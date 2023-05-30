@@ -46,7 +46,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>May 22, 2023 04:29:30 PM</span>
+                    <span class='label suite-start-time blue darken-3'>May 30, 2023 07:04:21 PM</span>
 				</a>
 			</li>
 			<li>
@@ -72,6 +72,7 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -122,10 +123,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -137,10 +138,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>4</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='55.556%'><span class='strong'>10</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='44.444%'>8</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -155,17 +156,17 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>Smoke Test-Admin App</span>
-						<span class='test-time'>May 22, 2023 04:29:30 PM</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-name'>Smoke Test</span>
+						<span class='test-time'>May 30, 2023 07:04:21 PM</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>May 22, 2023 04:29:30 PM</span>
-	<span class='label end-time'>May 22, 2023 04:30:11 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 40s+431ms</span>
+	<span class='label start-time'>May 30, 2023 07:04:21 PM</span>
+	<span class='label end-time'>May 30, 2023 07:07:23 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 3m 1s+930ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -179,22 +180,92 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>4:29:35 PM</td>
-					<td class='step-details'>Method Been Executed Sucessfully:-studentlogin</td>
+					<td class='timestamp'>7:04:29 PM</td>
+					<td class='step-details'>Method Been Executed Sucessfully:-adminlogin</td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>4:29:52 PM</td>
-					<td class='step-details'>Method Been Executed Sucessfully:-scorecard</td>
+					<td class='timestamp'>7:04:48 PM</td>
+					<td class='step-details'>Method Been Executed Sucessfully:-facultycreate</td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>4:30:06 PM</td>
-					<td class='step-details'>Method Been Executed Sucessfully:-supportnewticket</td>
+					<td class='timestamp'>7:05:00 PM</td>
+					<td class='step-details'>Method Been Executed Sucessfully:-studentcreate</td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>4:30:11 PM</td>
+					<td class='timestamp'>7:05:13 PM</td>
+					<td class='step-details'>Method Been Executed Sucessfully:-groupcreate</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>7:05:28 PM</td>
+					<td class='step-details'>Method Been Executed Sucessfully:-groupdelete</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>7:05:42 PM</td>
+					<td class='step-details'>Method Been Executed Sucessfully:-gradesettingcreate</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>7:05:53 PM</td>
+					<td class='step-details'>Method Been Executed Sucessfully:-gradesettingdelete</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>7:06:00 PM</td>
+					<td class='step-details'>Method Been Executed Sucessfully:-labenquiry</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>7:06:21 PM</td>
+					<td class='step-details'>Method Been Executed Sucessfully:-curriculumcreate</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:07:01 PM</td>
+					<td class='step-details'>Method Been Failed:-curriculumassign</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:07:01 PM</td>
+					<td class='step-details'>Test Failed :- curriculumassign<img data-featherlight='C:\Users\premk\Downloads\Test\Automation\com.starelabs\.\ScreenShot\05\30_2023_19_07_01.png' width='10%' src='C:\Users\premk\Downloads\Test\Automation\com.starelabs\.\ScreenShot\05\30_2023_19_07_01.png' data-src='C:\Users\premk\Downloads\Test\Automation\com.starelabs\.\ScreenShot\05\30_2023_19_07_01.png'></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:07:06 PM</td>
+					<td class='step-details'>Method Been Failed:-materialuploadcurriculum</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:07:07 PM</td>
+					<td class='step-details'>Test Failed :- materialuploadcurriculum<img data-featherlight='C:\Users\premk\Downloads\Test\Automation\com.starelabs\.\ScreenShot\05\30_2023_19_07_07.png' width='10%' src='C:\Users\premk\Downloads\Test\Automation\com.starelabs\.\ScreenShot\05\30_2023_19_07_07.png' data-src='C:\Users\premk\Downloads\Test\Automation\com.starelabs\.\ScreenShot\05\30_2023_19_07_07.png'></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:07:12 PM</td>
+					<td class='step-details'>Method Been Failed:-learningpathcurriculum</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:07:12 PM</td>
+					<td class='step-details'>Test Failed :- learningpathcurriculum<img data-featherlight='C:\Users\premk\Downloads\Test\Automation\com.starelabs\.\ScreenShot\05\30_2023_19_07_12.png' width='10%' src='C:\Users\premk\Downloads\Test\Automation\com.starelabs\.\ScreenShot\05\30_2023_19_07_12.png' data-src='C:\Users\premk\Downloads\Test\Automation\com.starelabs\.\ScreenShot\05\30_2023_19_07_12.png'></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:07:17 PM</td>
+					<td class='step-details'>Method Been Failed:-deletecurriculum</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:07:18 PM</td>
+					<td class='step-details'>Test Failed :- deletecurriculum<img data-featherlight='C:\Users\premk\Downloads\Test\Automation\com.starelabs\.\ScreenShot\05\30_2023_19_07_18.png' width='10%' src='C:\Users\premk\Downloads\Test\Automation\com.starelabs\.\ScreenShot\05\30_2023_19_07_18.png' data-src='C:\Users\premk\Downloads\Test\Automation\com.starelabs\.\ScreenShot\05\30_2023_19_07_18.png'></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>7:07:23 PM</td>
 					<td class='step-details'>Method Been Executed Sucessfully:-signoutstarelabs</td>
 				</tr>
 			</tbody>
@@ -243,25 +314,25 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>4</div>
+					<div class='panel-lead'>18</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>May 22, 2023 04:29:30 PM</div>
+					<div class='panel-lead'>May 30, 2023 07:04:21 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>May 22, 2023 04:30:11 PM</div>
+			 		<div class='panel-lead'>May 30, 2023 07:07:23 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 40s+552ms</div>
+					<div class='panel-lead'>0h 3m 2s+58ms</div>
 				</div>
 			</div>
 		</div>
@@ -274,22 +345,22 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 1,
-				failParent: 0,
+				passParent: 0,
+				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 0,
+				exceptionsParent: 1,
 				
-				passChild: 4,
-				failChild: 0,
+				passChild: 10,
+				failChild: 8,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				exceptionsChild: 0,
+				exceptionsChild: 8,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,

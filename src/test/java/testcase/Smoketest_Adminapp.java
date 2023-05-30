@@ -18,6 +18,7 @@ import pages.Gradesettingcreateadmin;
 import pages.Gradesettingdeleteadmin;
 import pages.Groupcreateadmin;
 import pages.Groupdeleteadmin;
+import pages.Labenquiryadmin;
 import pages.Logout;
 import pages.Studentcreateadmin;
 import pages.Studentdeleteadmin;
@@ -33,7 +34,7 @@ public class Smoketest_Adminapp extends Baseclass {
 		lp.Password().sendKeys("12345");
 		lp.Loginbutton().click();
 		Thread.sleep(2000);
-		Assert.assertEquals(driver.getCurrentUrl(), "https://dev.digilabs.ai/dashboard");
+		Assert.assertEquals(driver.getCurrentUrl(), "https://dev.digilabs.ai/dashboard1");
 		Thread.sleep(4000);
 	}
 	
@@ -211,6 +212,29 @@ public class Smoketest_Adminapp extends Baseclass {
 	}
 	
 	@Test (priority=8)
+	public void labenquiry() throws InterruptedException
+	{
+		Labenquiryadmin lea = new Labenquiryadmin(driver);
+		lea.Labenquirytab().click();
+		lea.Enquirybutton().click();
+		Thread.sleep(3000);
+		String personname = RandomStringUtils.randomAlphabetic(8);
+		lea.Contactpersonname().sendKeys(personname);
+		Random random = new Random(); 
+        long randomNumber = Math.abs(random.nextLong()); 
+        String randomString = Long.toString(randomNumber); 
+        String mobileno = randomString.substring(0, 10); 
+        //System.out.println(mobileno);
+		lea.Mobilenumber().sendKeys(mobileno);
+		lea.Labenquirysave().click();
+		Thread.sleep(2000);
+		lea.Thankyoumessage().isDisplayed();
+		System.out.println(lea.Thankyoumessage().getText());
+		Thread.sleep(2000);
+		lea.Buttonclose().click();
+	}
+	
+	@Test (priority=9)
 	public void signoutstarelabs() throws InterruptedException {
 		 Thread.sleep(5000);
 		 Logout lout = new Logout(driver);

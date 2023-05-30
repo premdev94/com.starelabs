@@ -1,5 +1,9 @@
 package admintestcase;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 import java.util.Random;
 
@@ -13,12 +17,18 @@ import org.testng.annotations.Test;
 
 import action.Baseclass;
 import pages.AdminLogin;
+import pages.Assigncurriculumadmin;
+import pages.Curriculumcreateadmin;
+import pages.Deletecurriculumadmin;
 import pages.Facultycreateadmin;
 import pages.Gradesettingcreateadmin;
 import pages.Gradesettingdeleteadmin;
 import pages.Groupcreateadmin;
 import pages.Groupdeleteadmin;
+import pages.Labenquiryadmin;
+import pages.Learningpathadmin;
 import pages.Logout;
+import pages.Materialuploadadmin;
 import pages.Studentcreateadmin;
 import pages.Studentdeleteadmin;
 
@@ -211,6 +221,175 @@ public class Smoketest_Adminapp extends Baseclass {
 	}
 	
 	@Test (priority=8)
+	public void labenquiry() throws InterruptedException
+	{
+		Labenquiryadmin lea = new Labenquiryadmin(driver);
+		lea.Labenquirytab().click();
+		lea.Enquirybutton().click();
+		Thread.sleep(3000);
+		String personname = RandomStringUtils.randomAlphabetic(8);
+		lea.Contactpersonname().sendKeys(personname);
+		Random random = new Random(); 
+        long randomNumber = Math.abs(random.nextLong()); 
+        String randomString = Long.toString(randomNumber); 
+        String mobileno = randomString.substring(0, 10); 
+        //System.out.println(mobileno);
+		lea.Mobilenumber().sendKeys(mobileno);
+		lea.Labenquirysave().click();
+		Thread.sleep(2000);
+		lea.Thankyoumessage().isDisplayed();
+		System.out.println(lea.Thankyoumessage().getText());
+		Thread.sleep(2000);
+		lea.Buttonclose().click();
+	}
+	
+	@Test (priority=9)
+	public void curriculumcreate() throws InterruptedException
+	{
+		Curriculumcreateadmin cca = new Curriculumcreateadmin(driver);
+		cca.ClickCurriculumModule().click();
+		cca.AddCurriculum().click();
+		Thread.sleep(3000);
+		String curriculamname = RandomStringUtils.randomAlphabetic(8);
+		cca.CurriculumName().sendKeys(curriculamname);
+		String curriculamcode = RandomStringUtils.randomAlphabetic(8);
+		cca.CurriculumCode().sendKeys(curriculamcode);
+		Select labname=new Select(cca.LabName());
+		labname.selectByValue("Apache");
+		Thread.sleep(2000);
+		Select faculty=new Select(cca.FacultyName());
+		faculty.selectByVisibleText("Anil");
+		cca.StudentsEnrolled().sendKeys("10");
+		DateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
+		Date date = new Date();
+		Calendar c = Calendar.getInstance(); 
+		c.setTime(date); 
+		c.add(Calendar.DATE, 1);
+		date = c.getTime();
+		String date1= dateFormat.format(date);
+		cca.StartDate().sendKeys(date1);
+		cca.EndDate().sendKeys("31-12-2023");
+		Thread.sleep(3000);
+		cca.LabPlanningCheckbox().click();
+		cca.AddSlot().click();
+		Thread.sleep(2000);
+		Select slothours=new Select(cca.SlotHours());
+		slothours.selectByValue("90");
+		Thread.sleep(2000);
+		cca.SlotTimeFix().click();
+		cca.SlotTimeSet().click();
+		cca.SlotSave().click();
+		Thread.sleep(3000);
+		cca.CurriculumSubmit().click();
+		Thread.sleep(2000);
+		cca.CurriculumPopupMessage().isDisplayed();
+		System.out.println(cca.CurriculumPopupMessage().getText());
+		Thread.sleep(2000);
+		
+	}
+	
+	@Test (priority=10)
+	public void curriculumassign() throws InterruptedException
+	{
+		Assigncurriculumadmin aca = new Assigncurriculumadmin(driver);
+		aca.ClickCurriculumModule().click();
+		Thread.sleep(2000);
+		Select display = new Select(aca.Display());
+		display.selectByValue("10");
+		Thread.sleep(2000);
+		aca.ClickLast().click();
+		aca.ClickAssignButton().click();
+		aca.StudentSearch().sendKeys("20cse01");
+		Thread.sleep(2000);
+		aca.CheckboxChoose().click();
+		aca.AssignButton().click();
+		Thread.sleep(2000);
+		aca.PopupMessageAfterAssign().isDisplayed();
+		System.out.println(aca.PopupMessageAfterAssign().getText());
+		
+	}
+	
+	@Test (priority=11)
+	public void materialuploadcurriculum() throws InterruptedException
+	{
+		Materialuploadadmin muc = new Materialuploadadmin(driver);
+		muc.ClickCurriculumModule().click();
+		Thread.sleep(2000);
+		Select display = new Select(muc.ClickDisplay());
+		display.selectByValue("10");
+		Thread.sleep(2000);
+		muc.ClickLast().click();
+		Thread.sleep(3000);
+		muc.ClickCurriculumName().click();
+		muc.ClickDocs().click();
+		muc.LinkClick().click();
+		muc.LinkClick().click();
+		muc.URLOne().sendKeys("https://dev.digilabs.ai/curriculum/284?status=1");
+		muc.URLTwo().sendKeys("https://dev.digilabs.ai/curriculum/284?status=2");
+		muc.FileUpload().sendKeys("C:\\Users\\premk\\Downloads\\Files\\1.jpg");
+		Thread.sleep(2000);
+		muc.FileUpload().sendKeys("C:\\Users\\premk\\Downloads\\Files\\2.jpg");
+		muc.FileUpload().sendKeys("C:\\Users\\premk\\Downloads\\Files\\files.zip");
+		muc.FileUpload().sendKeys("C:\\Users\\premk\\Downloads\\Files\\sample.mp4");
+		muc.DocsSave().click();
+		Thread.sleep(2000);
+		muc.CheckPopupMessage().isDisplayed();
+		System.out.println(muc.CheckPopupMessage().getText());
+	}
+	
+	@Test (priority=12)
+	public void learningpathcurriculum() throws InterruptedException
+	{
+		Learningpathadmin lpa = new Learningpathadmin(driver);
+		lpa.ClickCurriculumModule().click();
+		Thread.sleep(2000);
+		Select display = new Select(lpa.ClickDisplay());
+		display.selectByValue("10");
+		Thread.sleep(2000);
+		lpa.ClickLast().click();
+		Thread.sleep(3000);
+		lpa.ClickCurriculumName().click();
+		lpa.ClickLearningPath().click();
+		lpa.TitleOne().sendKeys("Main Path-1");
+		lpa.PlusTwo().click();
+		lpa.TitleTwo().sendKeys("Sub Path-1");
+		lpa.PlusOne().click();
+		lpa.TitleThree().sendKeys("Main Path-2");
+		lpa.PlusThree().click();
+		lpa.TitleFour().sendKeys("Sub Path-2-1");
+		lpa.PlusThree().click();
+		lpa.TitleFive().sendKeys("Sub Path-2-2");
+		Thread.sleep(2000);
+		lpa.PlusOne().click();
+		lpa.TitleSix().sendKeys("Main Path-3");
+		lpa.PlusFour().click();
+		lpa.TitleSeven().sendKeys("Sub Path-3-1");
+		Thread.sleep(2000);
+		lpa.SaveLearningPath().click();
+		lpa.CheckPopupMessage().isDisplayed();
+		System.out.println(lpa.CheckPopupMessage().getText());
+	}
+	
+	@Test (priority=13)
+	public void deletecurriculum() throws InterruptedException
+	{
+		Deletecurriculumadmin dca = new Deletecurriculumadmin(driver);
+		dca.ClickCurriculumModule().click();
+		Thread.sleep(2000);
+		Select display1 = new Select(dca.Display());
+		display1.selectByValue("10");
+		Thread.sleep(2000);
+		dca.ClickLast().click();
+		dca.ClickDeleteIcon().click();
+		Thread.sleep(2000);
+		dca.DeleteConfirm().click();
+		Thread.sleep(2000);
+		dca.CheckPopupMessageAfterDelete().isDisplayed();
+		System.out.println(dca.CheckPopupMessageAfterDelete().getText());
+		
+	}
+	
+	@Test (priority=14)
 	public void signoutstarelabs() throws InterruptedException {
 		 Thread.sleep(5000);
 		 Logout lout = new Logout(driver);

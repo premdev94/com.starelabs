@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-22T18:25:28 IST" name="Suite" finished-at="2023-05-22T18:26:08 IST" duration-ms="40616">
+  <suite started-at="2023-05-30T12:49:02 IST" name="Suite" finished-at="2023-05-30T12:49:43 IST" duration-ms="41508">
     <groups>
     </groups>
-    <test started-at="2023-05-22T18:25:28 IST" name="Test" finished-at="2023-05-22T18:26:08 IST" duration-ms="40616">
+    <test started-at="2023-05-30T12:49:02 IST" name="Test" finished-at="2023-05-30T12:49:43 IST" duration-ms="41508">
       <class name="testcase.Smoketest_Studentapp">
-        <test-method is-config="true" signature="initial()[pri:0, instance:testcase.Smoketest_Studentapp@5d47c63f]" started-at="2023-05-22T18:25:27 IST" name="initial" finished-at="2023-05-22T18:25:28 IST" duration-ms="165" status="PASS">
+        <test-method is-config="true" signature="initial()[pri:0, instance:testcase.Smoketest_Studentapp@5d47c63f]" started-at="2023-05-30T12:49:02 IST" name="initial" finished-at="2023-05-30T12:49:02 IST" duration-ms="115" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initial -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcase.Smoketest_Studentapp@5d47c63f]" started-at="2023-05-22T18:25:28 IST" name="setup" finished-at="2023-05-22T18:25:30 IST" duration-ms="2488" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcase.Smoketest_Studentapp@5d47c63f]" started-at="2023-05-30T12:49:02 IST" name="setup" finished-at="2023-05-30T12:49:05 IST" duration-ms="3313" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="studentlogin()[pri:1, instance:testcase.Smoketest_Studentapp@5d47c63f]" started-at="2023-05-22T18:25:30 IST" name="studentlogin" finished-at="2023-05-22T18:25:32 IST" duration-ms="2316" status="PASS">
+        <test-method signature="studentlogin()[pri:1, instance:testcase.Smoketest_Studentapp@5d47c63f]" started-at="2023-05-30T12:49:05 IST" name="studentlogin" finished-at="2023-05-30T12:49:08 IST" duration-ms="2309" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- studentlogin -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:testcase.Smoketest_Studentapp@5d47c63f]" started-at="2023-05-22T18:25:32 IST" name="teardown" finished-at="2023-05-22T18:25:32 IST" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:testcase.Smoketest_Studentapp@5d47c63f]" started-at="2023-05-30T12:49:08 IST" name="teardown" finished-at="2023-05-30T12:49:08 IST" duration-ms="6" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -30,11 +30,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method signature="scorecard()[pri:2, instance:testcase.Smoketest_Studentapp@5d47c63f]" started-at="2023-05-22T18:25:32 IST" name="scorecard" finished-at="2023-05-22T18:25:49 IST" duration-ms="16663" status="PASS">
+        <test-method signature="scorecard()[pri:2, instance:testcase.Smoketest_Studentapp@5d47c63f]" started-at="2023-05-30T12:49:08 IST" name="scorecard" finished-at="2023-05-30T12:49:24 IST" duration-ms="16648" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- scorecard -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:testcase.Smoketest_Studentapp@5d47c63f]" started-at="2023-05-22T18:25:49 IST" name="teardown" finished-at="2023-05-22T18:25:49 IST" duration-ms="0" status="PASS">
+        <test-method signature="supportnewticket()[pri:3, instance:testcase.Smoketest_Studentapp@5d47c63f]" started-at="2023-05-30T12:49:24 IST" name="supportnewticket" finished-at="2023-05-30T12:49:38 IST" duration-ms="13958" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- supportnewticket -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:testcase.Smoketest_Studentapp@5d47c63f]" started-at="2023-05-30T12:49:24 IST" name="teardown" finished-at="2023-05-30T12:49:24 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -45,11 +49,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method signature="supportnewticket()[pri:3, instance:testcase.Smoketest_Studentapp@5d47c63f]" started-at="2023-05-22T18:25:49 IST" name="supportnewticket" finished-at="2023-05-22T18:26:03 IST" duration-ms="13840" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- supportnewticket -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:testcase.Smoketest_Studentapp@5d47c63f]" started-at="2023-05-22T18:26:03 IST" name="teardown" finished-at="2023-05-22T18:26:03 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:testcase.Smoketest_Studentapp@5d47c63f]" started-at="2023-05-30T12:49:38 IST" name="teardown" finished-at="2023-05-30T12:49:38 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -60,11 +60,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method signature="signoutstarelabs()[pri:4, instance:testcase.Smoketest_Studentapp@5d47c63f]" started-at="2023-05-22T18:26:03 IST" name="signoutstarelabs" finished-at="2023-05-22T18:26:08 IST" duration-ms="5279" status="PASS">
+        <test-method signature="signoutstarelabs()[pri:4, instance:testcase.Smoketest_Studentapp@5d47c63f]" started-at="2023-05-30T12:49:38 IST" name="signoutstarelabs" finished-at="2023-05-30T12:49:43 IST" duration-ms="5254" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signoutstarelabs -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:testcase.Smoketest_Studentapp@5d47c63f]" started-at="2023-05-22T18:26:08 IST" name="teardown" finished-at="2023-05-22T18:26:08 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:testcase.Smoketest_Studentapp@5d47c63f]" started-at="2023-05-30T12:49:43 IST" name="teardown" finished-at="2023-05-30T12:49:43 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -75,7 +75,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcase.Smoketest_Studentapp@5d47c63f]" started-at="2023-05-22T18:26:08 IST" name="tearDown" finished-at="2023-05-22T18:26:09 IST" duration-ms="426" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcase.Smoketest_Studentapp@5d47c63f]" started-at="2023-05-30T12:49:43 IST" name="tearDown" finished-at="2023-05-30T12:49:44 IST" duration-ms="296" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

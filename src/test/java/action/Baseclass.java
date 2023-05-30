@@ -31,7 +31,7 @@ public class Baseclass extends Wrapper {
         ExtentHtmlReporter extent = new ExtentHtmlReporter(new File("./Reports/Live_SmokeTest_Result " +System.currentTimeMillis()+  ".html"));
         report = new ExtentReports();
         report.attachReporter(extent);
-        logger = report.createTest("Smoke Test-Admin App");
+        logger = report.createTest("Smoke Test");
         config = new Config();
         
         

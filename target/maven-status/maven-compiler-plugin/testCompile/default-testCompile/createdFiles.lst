@@ -1,6 +1,8 @@
+pages\Curriculumcreateadmin.class
 action\Wrapper.class
 pages\Gradesettingcreateadmin.class
 pages\StudentLogin.class
+pages\Labenquiryadmin.class
 pages\Logout.class
 pages\AdminLogin.class
 pages\Groupcreateadmin.class
