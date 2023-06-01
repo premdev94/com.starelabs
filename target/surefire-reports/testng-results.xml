@@ -1,85 +1,315 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="18" passed="18" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-30T12:49:02 IST" name="Suite" finished-at="2023-05-30T12:49:43 IST" duration-ms="41508">
+  <suite started-at="2023-06-01T13:22:14 IST" name="Suite" finished-at="2023-06-01T13:22:55 IST" duration-ms="41427">
     <groups>
     </groups>
-    <test started-at="2023-05-30T12:49:02 IST" name="Test" finished-at="2023-05-30T12:49:43 IST" duration-ms="41508">
+    <test started-at="2023-06-01T13:22:14 IST" name="Test" finished-at="2023-06-01T13:22:55 IST" duration-ms="41427">
       <class name="testcase.Smoketest_Studentapp">
-        <test-method is-config="true" signature="initial()[pri:0, instance:testcase.Smoketest_Studentapp@5d47c63f]" started-at="2023-05-30T12:49:02 IST" name="initial" finished-at="2023-05-30T12:49:02 IST" duration-ms="115" status="PASS">
+        <test-method is-config="true" signature="initial()[pri:0, instance:testcase.Smoketest_Studentapp@3bbc39f8]" started-at="2023-06-01T13:22:14 IST" name="initial" finished-at="2023-06-01T13:22:14 IST" duration-ms="131" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initial -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcase.Smoketest_Studentapp@5d47c63f]" started-at="2023-05-30T12:49:02 IST" name="setup" finished-at="2023-05-30T12:49:05 IST" duration-ms="3313" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcase.Smoketest_Studentapp@3bbc39f8]" started-at="2023-06-01T13:22:14 IST" name="setup" finished-at="2023-06-01T13:22:17 IST" duration-ms="2778" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="studentlogin()[pri:1, instance:testcase.Smoketest_Studentapp@5d47c63f]" started-at="2023-05-30T12:49:05 IST" name="studentlogin" finished-at="2023-05-30T12:49:08 IST" duration-ms="2309" status="PASS">
+        <test-method signature="studentlogin()[pri:1, instance:testcase.Smoketest_Studentapp@3bbc39f8]" started-at="2023-06-01T13:22:17 IST" name="studentlogin" finished-at="2023-06-01T13:22:19 IST" duration-ms="2398" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- studentlogin -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:testcase.Smoketest_Studentapp@5d47c63f]" started-at="2023-05-30T12:49:08 IST" name="teardown" finished-at="2023-05-30T12:49:08 IST" duration-ms="6" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:testcase.Smoketest_Studentapp@3bbc39f8]" started-at="2023-06-01T13:22:19 IST" name="teardown" finished-at="2023-06-01T13:22:19 IST" duration-ms="5" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=studentlogin status=SUCCESS method=Smoketest_Studentapp.studentlogin()[pri:1, instance:testcase.Smoketest_Studentapp@5d47c63f] output={null}]]]>
+                <![CDATA[[TestResult name=studentlogin status=SUCCESS method=Smoketest_Studentapp.studentlogin()[pri:1, instance:testcase.Smoketest_Studentapp@3bbc39f8] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method signature="scorecard()[pri:2, instance:testcase.Smoketest_Studentapp@5d47c63f]" started-at="2023-05-30T12:49:08 IST" name="scorecard" finished-at="2023-05-30T12:49:24 IST" duration-ms="16648" status="PASS">
+        <test-method signature="scorecard()[pri:2, instance:testcase.Smoketest_Studentapp@3bbc39f8]" started-at="2023-06-01T13:22:19 IST" name="scorecard" finished-at="2023-06-01T13:22:36 IST" duration-ms="16883" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- scorecard -->
-        <test-method signature="supportnewticket()[pri:3, instance:testcase.Smoketest_Studentapp@5d47c63f]" started-at="2023-05-30T12:49:24 IST" name="supportnewticket" finished-at="2023-05-30T12:49:38 IST" duration-ms="13958" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:testcase.Smoketest_Studentapp@3bbc39f8]" started-at="2023-06-01T13:22:36 IST" name="teardown" finished-at="2023-06-01T13:22:36 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=scorecard status=SUCCESS method=Smoketest_Studentapp.scorecard()[pri:2, instance:testcase.Smoketest_Studentapp@3bbc39f8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="supportnewticket()[pri:3, instance:testcase.Smoketest_Studentapp@3bbc39f8]" started-at="2023-06-01T13:22:36 IST" name="supportnewticket" finished-at="2023-06-01T13:22:50 IST" duration-ms="14073" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- supportnewticket -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:testcase.Smoketest_Studentapp@5d47c63f]" started-at="2023-05-30T12:49:24 IST" name="teardown" finished-at="2023-05-30T12:49:24 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:testcase.Smoketest_Studentapp@3bbc39f8]" started-at="2023-06-01T13:22:50 IST" name="teardown" finished-at="2023-06-01T13:22:50 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=scorecard status=SUCCESS method=Smoketest_Studentapp.scorecard()[pri:2, instance:testcase.Smoketest_Studentapp@5d47c63f] output={null}]]]>
+                <![CDATA[[TestResult name=supportnewticket status=SUCCESS method=Smoketest_Studentapp.supportnewticket()[pri:3, instance:testcase.Smoketest_Studentapp@3bbc39f8] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:testcase.Smoketest_Studentapp@5d47c63f]" started-at="2023-05-30T12:49:38 IST" name="teardown" finished-at="2023-05-30T12:49:38 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=supportnewticket status=SUCCESS method=Smoketest_Studentapp.supportnewticket()[pri:3, instance:testcase.Smoketest_Studentapp@5d47c63f] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method signature="signoutstarelabs()[pri:4, instance:testcase.Smoketest_Studentapp@5d47c63f]" started-at="2023-05-30T12:49:38 IST" name="signoutstarelabs" finished-at="2023-05-30T12:49:43 IST" duration-ms="5254" status="PASS">
+        <test-method signature="signoutstarelabs()[pri:4, instance:testcase.Smoketest_Studentapp@3bbc39f8]" started-at="2023-06-01T13:22:50 IST" name="signoutstarelabs" finished-at="2023-06-01T13:22:55 IST" duration-ms="5258" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signoutstarelabs -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:testcase.Smoketest_Studentapp@5d47c63f]" started-at="2023-05-30T12:49:43 IST" name="teardown" finished-at="2023-05-30T12:49:43 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:testcase.Smoketest_Studentapp@3bbc39f8]" started-at="2023-06-01T13:22:55 IST" name="teardown" finished-at="2023-06-01T13:22:55 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=signoutstarelabs status=SUCCESS method=Smoketest_Studentapp.signoutstarelabs()[pri:4, instance:testcase.Smoketest_Studentapp@5d47c63f] output={null}]]]>
+                <![CDATA[[TestResult name=signoutstarelabs status=SUCCESS method=Smoketest_Studentapp.signoutstarelabs()[pri:4, instance:testcase.Smoketest_Studentapp@3bbc39f8] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcase.Smoketest_Studentapp@5d47c63f]" started-at="2023-05-30T12:49:43 IST" name="tearDown" finished-at="2023-05-30T12:49:44 IST" duration-ms="296" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcase.Smoketest_Studentapp@3bbc39f8]" started-at="2023-06-01T13:22:55 IST" name="tearDown" finished-at="2023-06-01T13:22:56 IST" duration-ms="296" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testcase.Smoketest_Studentapp -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
+  <suite started-at="2023-06-01T13:22:56 IST" name="Suite (0)" finished-at="2023-06-01T13:25:49 IST" duration-ms="173744">
+    <groups>
+    </groups>
+    <test started-at="2023-06-01T13:22:56 IST" name="Test" finished-at="2023-06-01T13:25:49 IST" duration-ms="173744">
+      <class name="admintestcase.Smoketest_Adminapp">
+        <test-method is-config="true" signature="initial()[pri:0, instance:admintestcase.Smoketest_Adminapp@657c8ad9]" started-at="2023-06-01T13:22:56 IST" name="initial" finished-at="2023-06-01T13:22:56 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initial -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:admintestcase.Smoketest_Adminapp@657c8ad9]" started-at="2023-06-01T13:22:56 IST" name="setup" finished-at="2023-06-01T13:22:57 IST" duration-ms="1785" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="adminlogin()[pri:1, instance:admintestcase.Smoketest_Adminapp@657c8ad9]" started-at="2023-06-01T13:22:57 IST" name="adminlogin" finished-at="2023-06-01T13:23:04 IST" duration-ms="6375" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adminlogin -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:admintestcase.Smoketest_Adminapp@657c8ad9]" started-at="2023-06-01T13:23:04 IST" name="teardown" finished-at="2023-06-01T13:23:04 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=adminlogin status=SUCCESS method=Smoketest_Adminapp.adminlogin()[pri:1, instance:admintestcase.Smoketest_Adminapp@657c8ad9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="facultycreate()[pri:2, instance:admintestcase.Smoketest_Adminapp@657c8ad9]" started-at="2023-06-01T13:23:04 IST" name="facultycreate" finished-at="2023-06-01T13:23:22 IST" duration-ms="18095" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- facultycreate -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:admintestcase.Smoketest_Adminapp@657c8ad9]" started-at="2023-06-01T13:23:22 IST" name="teardown" finished-at="2023-06-01T13:23:22 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=facultycreate status=SUCCESS method=Smoketest_Adminapp.facultycreate()[pri:2, instance:admintestcase.Smoketest_Adminapp@657c8ad9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="studentcreate()[pri:3, instance:admintestcase.Smoketest_Adminapp@657c8ad9]" started-at="2023-06-01T13:23:22 IST" name="studentcreate" finished-at="2023-06-01T13:23:36 IST" duration-ms="13937" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- studentcreate -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:admintestcase.Smoketest_Adminapp@657c8ad9]" started-at="2023-06-01T13:23:36 IST" name="teardown" finished-at="2023-06-01T13:23:36 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=studentcreate status=SUCCESS method=Smoketest_Adminapp.studentcreate()[pri:3, instance:admintestcase.Smoketest_Adminapp@657c8ad9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="groupcreate()[pri:4, instance:admintestcase.Smoketest_Adminapp@657c8ad9]" started-at="2023-06-01T13:23:36 IST" name="groupcreate" finished-at="2023-06-01T13:23:48 IST" duration-ms="12598" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- groupcreate -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:admintestcase.Smoketest_Adminapp@657c8ad9]" started-at="2023-06-01T13:23:48 IST" name="teardown" finished-at="2023-06-01T13:23:48 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=groupcreate status=SUCCESS method=Smoketest_Adminapp.groupcreate()[pri:4, instance:admintestcase.Smoketest_Adminapp@657c8ad9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="groupdelete()[pri:5, instance:admintestcase.Smoketest_Adminapp@657c8ad9]" started-at="2023-06-01T13:23:48 IST" name="groupdelete" finished-at="2023-06-01T13:24:04 IST" duration-ms="15287" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- groupdelete -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:admintestcase.Smoketest_Adminapp@657c8ad9]" started-at="2023-06-01T13:24:04 IST" name="teardown" finished-at="2023-06-01T13:24:04 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=groupdelete status=SUCCESS method=Smoketest_Adminapp.groupdelete()[pri:5, instance:admintestcase.Smoketest_Adminapp@657c8ad9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="gradesettingcreate()[pri:6, instance:admintestcase.Smoketest_Adminapp@657c8ad9]" started-at="2023-06-01T13:24:04 IST" name="gradesettingcreate" finished-at="2023-06-01T13:24:20 IST" duration-ms="16208" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gradesettingcreate -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:admintestcase.Smoketest_Adminapp@657c8ad9]" started-at="2023-06-01T13:24:20 IST" name="teardown" finished-at="2023-06-01T13:24:20 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=gradesettingcreate status=SUCCESS method=Smoketest_Adminapp.gradesettingcreate()[pri:6, instance:admintestcase.Smoketest_Adminapp@657c8ad9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="gradesettingdelete()[pri:7, instance:admintestcase.Smoketest_Adminapp@657c8ad9]" started-at="2023-06-01T13:24:20 IST" name="gradesettingdelete" finished-at="2023-06-01T13:24:31 IST" duration-ms="10637" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gradesettingdelete -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:admintestcase.Smoketest_Adminapp@657c8ad9]" started-at="2023-06-01T13:24:31 IST" name="teardown" finished-at="2023-06-01T13:24:31 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=gradesettingdelete status=SUCCESS method=Smoketest_Adminapp.gradesettingdelete()[pri:7, instance:admintestcase.Smoketest_Adminapp@657c8ad9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="labenquiry()[pri:8, instance:admintestcase.Smoketest_Adminapp@657c8ad9]" started-at="2023-06-01T13:24:31 IST" name="labenquiry" finished-at="2023-06-01T13:24:39 IST" duration-ms="8113" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- labenquiry -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:admintestcase.Smoketest_Adminapp@657c8ad9]" started-at="2023-06-01T13:24:39 IST" name="teardown" finished-at="2023-06-01T13:24:39 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=labenquiry status=SUCCESS method=Smoketest_Adminapp.labenquiry()[pri:8, instance:admintestcase.Smoketest_Adminapp@657c8ad9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="curriculumcreate()[pri:9, instance:admintestcase.Smoketest_Adminapp@657c8ad9]" started-at="2023-06-01T13:24:39 IST" name="curriculumcreate" finished-at="2023-06-01T13:25:01 IST" duration-ms="21901" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- curriculumcreate -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:admintestcase.Smoketest_Adminapp@657c8ad9]" started-at="2023-06-01T13:25:01 IST" name="teardown" finished-at="2023-06-01T13:25:01 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=curriculumcreate status=SUCCESS method=Smoketest_Adminapp.curriculumcreate()[pri:9, instance:admintestcase.Smoketest_Adminapp@657c8ad9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="curriculumassign()[pri:10, instance:admintestcase.Smoketest_Adminapp@657c8ad9]" started-at="2023-06-01T13:25:01 IST" name="curriculumassign" finished-at="2023-06-01T13:25:11 IST" duration-ms="10304" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- curriculumassign -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:admintestcase.Smoketest_Adminapp@657c8ad9]" started-at="2023-06-01T13:25:11 IST" name="teardown" finished-at="2023-06-01T13:25:11 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=curriculumassign status=SUCCESS method=Smoketest_Adminapp.curriculumassign()[pri:10, instance:admintestcase.Smoketest_Adminapp@657c8ad9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="materialuploadcurriculum()[pri:11, instance:admintestcase.Smoketest_Adminapp@657c8ad9]" started-at="2023-06-01T13:25:11 IST" name="materialuploadcurriculum" finished-at="2023-06-01T13:25:23 IST" duration-ms="12004" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- materialuploadcurriculum -->
+        <test-method signature="learningpathcurriculum()[pri:12, instance:admintestcase.Smoketest_Adminapp@657c8ad9]" started-at="2023-06-01T13:25:23 IST" name="learningpathcurriculum" finished-at="2023-06-01T13:25:35 IST" duration-ms="12351" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- learningpathcurriculum -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:admintestcase.Smoketest_Adminapp@657c8ad9]" started-at="2023-06-01T13:25:23 IST" name="teardown" finished-at="2023-06-01T13:25:23 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=materialuploadcurriculum status=SUCCESS method=Smoketest_Adminapp.materialuploadcurriculum()[pri:11, instance:admintestcase.Smoketest_Adminapp@657c8ad9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:admintestcase.Smoketest_Adminapp@657c8ad9]" started-at="2023-06-01T13:25:35 IST" name="teardown" finished-at="2023-06-01T13:25:35 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=learningpathcurriculum status=SUCCESS method=Smoketest_Adminapp.learningpathcurriculum()[pri:12, instance:admintestcase.Smoketest_Adminapp@657c8ad9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="deletecurriculum()[pri:13, instance:admintestcase.Smoketest_Adminapp@657c8ad9]" started-at="2023-06-01T13:25:35 IST" name="deletecurriculum" finished-at="2023-06-01T13:25:44 IST" duration-ms="8943" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deletecurriculum -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:admintestcase.Smoketest_Adminapp@657c8ad9]" started-at="2023-06-01T13:25:44 IST" name="teardown" finished-at="2023-06-01T13:25:44 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=deletecurriculum status=SUCCESS method=Smoketest_Adminapp.deletecurriculum()[pri:13, instance:admintestcase.Smoketest_Adminapp@657c8ad9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="signoutstarelabs()[pri:14, instance:admintestcase.Smoketest_Adminapp@657c8ad9]" started-at="2023-06-01T13:25:44 IST" name="signoutstarelabs" finished-at="2023-06-01T13:25:49 IST" duration-ms="5185" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signoutstarelabs -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:admintestcase.Smoketest_Adminapp@657c8ad9]" started-at="2023-06-01T13:25:49 IST" name="teardown" finished-at="2023-06-01T13:25:49 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=signoutstarelabs status=SUCCESS method=Smoketest_Adminapp.signoutstarelabs()[pri:14, instance:admintestcase.Smoketest_Adminapp@657c8ad9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:admintestcase.Smoketest_Adminapp@657c8ad9]" started-at="2023-06-01T13:25:49 IST" name="tearDown" finished-at="2023-06-01T13:25:49 IST" duration-ms="42" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- admintestcase.Smoketest_Adminapp -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite (0) -->
 </testng-results>
