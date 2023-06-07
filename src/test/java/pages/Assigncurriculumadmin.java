@@ -15,7 +15,7 @@ public class Assigncurriculumadmin extends Wrapper {
 	
 	By clickcurriculummodule=By.xpath("//span[text()=' Curriculum ']");
 	By display=By.xpath("//*[@aria-label='Default select example']");
-	By clicklast=By.xpath("//*[text()='Last']");
+	By clicklast=By.xpath("//*[text()='»']");
 	By clickassignbutton=By.xpath("//table/tbody/tr[last()]/td[9]/div/button");
 	By studentssearch=By.xpath("//input[@formcontrolname='student_search']");
 	By checkboxchoose=By.name("students");

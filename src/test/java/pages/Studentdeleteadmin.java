@@ -15,7 +15,7 @@ public class Studentdeleteadmin extends Wrapper {
 	
 	By clickstdmodule=By.xpath("//span[text()='Student Management']");
 	By display=By.xpath("//*[@aria-label='Default select example']");
-	By paginationlast=By.xpath("//*[text()='Last']");
+	By paginationlast=By.xpath("//*[text()='»']");
 	By deletecheckbox=By.xpath("//table/tbody/tr[last()]/td[1]/div/input");
 	By deleteselected=By.xpath("//button[text()='Delete Selected']");
 	By modalcontainer=By.className("modal-content");

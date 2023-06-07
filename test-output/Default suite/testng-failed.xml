@@ -3,16 +3,23 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="admintestcase.Smoketest_Adminapp">
+      <class name="facultytestcase.Smoketest_Facultyapp">
         <methods>
-          <include name="initial"/>
-          <include name="adminlogin"/>
           <include name="materialuploadcurriculum"/>
           <include name="teardown"/>
-          <include name="tearDown"/>
+          <include name="groupdelete"/>
           <include name="setup"/>
+          <include name="signoutstarelabs"/>
+          <include name="curriculumassign"/>
+          <include name="labenquiry"/>
+          <include name="deletecurriculum"/>
+          <include name="initial"/>
+          <include name="curriculumcreate"/>
+          <include name="learningpathcurriculum"/>
+          <include name="tearDown"/>
+          <include name="groupcreate"/>
         </methods>
-      </class> <!-- admintestcase.Smoketest_Adminapp -->
+      </class> <!-- facultytestcase.Smoketest_Facultyapp -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

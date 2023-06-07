@@ -151,7 +151,8 @@ public class Smoketest_Adminapp extends Baseclass {
 		Thread.sleep(3000);
 		gca.Modalcontainer();
 		Thread.sleep(2000);
-		gca.GroupName().sendKeys("Test Group - 1");
+		String GN = RandomStringUtils.randomAlphabetic(8);
+		gca.GroupName().sendKeys("Z"+GN);
 		gca.CreateGroup().click();
 		Thread.sleep(3000);
 		gca.CheckGroupCreatePopupMessage().isDisplayed();
@@ -218,6 +219,7 @@ public class Smoketest_Adminapp extends Baseclass {
 		Thread.sleep(3000);
 		gsda.CheckGradeDeletePopupMessage().isDisplayed();
 		System.out.println(gsda.CheckGradeDeletePopupMessage().getText());
+		Thread.sleep(4000);
 	}
 	
 	@Test (priority=8)
@@ -241,6 +243,7 @@ public class Smoketest_Adminapp extends Baseclass {
 		System.out.println(lea.Thankyoumessage().getText());
 		Thread.sleep(2000);
 		lea.Buttonclose().click();
+		Thread.sleep(4000);
 	}
 	
 	@Test (priority=9)
@@ -251,7 +254,7 @@ public class Smoketest_Adminapp extends Baseclass {
 		cca.AddCurriculum().click();
 		Thread.sleep(3000);
 		String curriculamname = RandomStringUtils.randomAlphabetic(8);
-		cca.CurriculumName().sendKeys(curriculamname);
+		cca.CurriculumName().sendKeys("Z"+curriculamname);
 		String curriculamcode = RandomStringUtils.randomAlphabetic(8);
 		cca.CurriculumCode().sendKeys(curriculamcode);
 		Select labname=new Select(cca.LabName());
@@ -284,7 +287,7 @@ public class Smoketest_Adminapp extends Baseclass {
 		Thread.sleep(2000);
 		cca.CurriculumPopupMessage().isDisplayed();
 		System.out.println(cca.CurriculumPopupMessage().getText());
-		Thread.sleep(2000);
+		Thread.sleep(4000);
 		
 	}
 	
@@ -306,6 +309,7 @@ public class Smoketest_Adminapp extends Baseclass {
 		Thread.sleep(2000);
 		aca.PopupMessageAfterAssign().isDisplayed();
 		System.out.println(aca.PopupMessageAfterAssign().getText());
+		Thread.sleep(4000);
 		
 	}
 	
@@ -335,6 +339,7 @@ public class Smoketest_Adminapp extends Baseclass {
 		Thread.sleep(2000);
 		muc.CheckPopupMessage().isDisplayed();
 		System.out.println(muc.CheckPopupMessage().getText());
+		Thread.sleep(4000);
 	}
 	
 	@Test (priority=12)
@@ -368,6 +373,7 @@ public class Smoketest_Adminapp extends Baseclass {
 		lpa.SaveLearningPath().click();
 		lpa.CheckPopupMessage().isDisplayed();
 		System.out.println(lpa.CheckPopupMessage().getText());
+		Thread.sleep(4000);
 	}
 	
 	@Test (priority=13)
@@ -386,6 +392,7 @@ public class Smoketest_Adminapp extends Baseclass {
 		Thread.sleep(2000);
 		dca.CheckPopupMessageAfterDelete().isDisplayed();
 		System.out.println(dca.CheckPopupMessageAfterDelete().getText());
+		Thread.sleep(4000);
 		
 	}
 	

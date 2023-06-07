@@ -15,7 +15,7 @@ public class Learningpathadmin extends Wrapper {
 	
 	By clickcurriculummodule=By.xpath("//span[text()=' Curriculum ']");
 	By display=By.xpath("//*[@aria-label='Default select example']");
-	By clicklast=By.xpath("//*[text()='Last']");
+	By clicklast=By.xpath("//*[text()='»']");
 	By clickcurriculumnme=By.xpath("//table/tbody/tr[last()]/td[1]");
 	By clicklearningpath=By.xpath("//*[text()=' Learning Path ']");
 	By titleone=By.xpath("//input[@placeholder='Title']");

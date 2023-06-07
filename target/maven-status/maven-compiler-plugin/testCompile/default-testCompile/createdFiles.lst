@@ -18,6 +18,7 @@ pages\Groupcreateadmin.class
 pages\Supportnewticket.class
 testcase\Smoketest_Adminapp.class
 utility\Config.class
+facultytestcase\Smoketest_Facultyapp.class
 pages\Groupdeleteadmin.class
 admintestcase\Smoketest_Adminapp.class
 pages\Facultycreateadmin.class

@@ -16,7 +16,7 @@ public class Groupdeleteadmin extends Wrapper {
 	By clickstdmodule=By.xpath("//span[text()='Student Management']");
 	By clickgroupsubmodule=By.xpath("//p[text()='Group']");
 	By groupdisplay=By.xpath("//select[@aria-label='Default select example']");
-	By pagelast=By.xpath("//*[text()='Last']");
+	By pagelast=By.xpath("//*[text()='»']");
 	By groupdelete=By.xpath("//table/tbody/tr[last()]/td[4]/img[2]");
 	By modalcontainer=By.className("modal-content");
 	By groupcfrmdelete=By.xpath("//button[text()='Confirm']");
