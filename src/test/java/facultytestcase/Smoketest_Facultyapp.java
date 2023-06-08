@@ -224,7 +224,7 @@ public class Smoketest_Facultyapp extends Baseclass {
 		Thread.sleep(2000);
 		aca.ClickLast().click();
 		aca.ClickAssignButton().click();
-		aca.StudentSearch().sendKeys("20cse01");
+		aca.StudentSearch().sendKeys("Kumar1001");
 		Thread.sleep(2000);
 		aca.CheckboxChoose().click();
 		aca.AssignButton().click();
