@@ -35,7 +35,7 @@ import pages.Studentdeleteadmin;
 public class Smoketest_Facultyapp extends Baseclass {
 	
 	@Test (priority=1)
-	public void adminlogin() throws InterruptedException
+	public void Facultylogin() throws InterruptedException
 	{
 		
 		AdminLogin lp = new AdminLogin(driver);
@@ -144,7 +144,7 @@ public class Smoketest_Facultyapp extends Baseclass {
 		Thread.sleep(4000);
 	}
 	
-	@Test (priority=5)
+	/*@Test (priority=5)
 	public void labenquiry() throws InterruptedException
 	{
 		Labenquiryadmin lea = new Labenquiryadmin(driver);
@@ -166,9 +166,9 @@ public class Smoketest_Facultyapp extends Baseclass {
 		Thread.sleep(2000);
 		lea.Buttonclose().click();
 		Thread.sleep(4000);
-	}
+	}*/
 	
-	@Test (priority=6)
+	@Test (priority=5)
 	public void curriculumcreate() throws InterruptedException
 	{
 		Curriculumcreateadmin cca = new Curriculumcreateadmin(driver);
@@ -213,7 +213,7 @@ public class Smoketest_Facultyapp extends Baseclass {
 		
 	}
 	
-	@Test (priority=7)
+	@Test (priority=6)
 	public void curriculumassign() throws InterruptedException
 	{
 		Assigncurriculumadmin aca = new Assigncurriculumadmin(driver);
@@ -235,7 +235,7 @@ public class Smoketest_Facultyapp extends Baseclass {
 		
 	}
 	
-	@Test (priority=8)
+	@Test (priority=7)
 	public void materialuploadcurriculum() throws InterruptedException
 	{
 		Materialuploadadmin muc = new Materialuploadadmin(driver);
@@ -264,7 +264,7 @@ public class Smoketest_Facultyapp extends Baseclass {
 		Thread.sleep(4000);
 	}
 	
-	@Test (priority=9)
+	@Test (priority=8)
 	public void learningpathcurriculum() throws InterruptedException
 	{
 		Learningpathadmin lpa = new Learningpathadmin(driver);
@@ -298,7 +298,7 @@ public class Smoketest_Facultyapp extends Baseclass {
 		Thread.sleep(4000);
 	}
 	
-	@Test (priority=10)
+	@Test (priority=9)
 	public void deletecurriculum() throws InterruptedException
 	{
 		Deletecurriculumadmin dca = new Deletecurriculumadmin(driver);
@@ -318,7 +318,7 @@ public class Smoketest_Facultyapp extends Baseclass {
 		
 	}
 	
-	@Test (priority=11)
+	@Test (priority=10)
 	public void signoutstarelabs() throws InterruptedException {
 		 Thread.sleep(5000);
 		 Logout lout = new Logout(driver);
