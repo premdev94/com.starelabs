@@ -5,19 +5,15 @@
     <classes>
       <class name="facultytestcase.Smoketest_Facultyapp">
         <methods>
+          <include name="deletecurriculum"/>
+          <include name="initial"/>
           <include name="materialuploadcurriculum"/>
           <include name="teardown"/>
-          <include name="groupdelete"/>
+          <include name="learningpathcurriculum"/>
+          <include name="tearDown"/>
           <include name="setup"/>
           <include name="signoutstarelabs"/>
           <include name="curriculumassign"/>
-          <include name="labenquiry"/>
-          <include name="deletecurriculum"/>
-          <include name="initial"/>
-          <include name="curriculumcreate"/>
-          <include name="learningpathcurriculum"/>
-          <include name="tearDown"/>
-          <include name="groupcreate"/>
         </methods>
       </class> <!-- facultytestcase.Smoketest_Facultyapp -->
     </classes>

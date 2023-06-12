@@ -1,25 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
       <class name="facultytestcase.Smoketest_Facultyapp">
         <methods>
+          <include name="deletecurriculum"/>
+          <include name="initial"/>
           <include name="materialuploadcurriculum"/>
           <include name="teardown"/>
-          <include name="groupdelete"/>
+          <include name="learningpathcurriculum"/>
+          <include name="tearDown"/>
           <include name="setup"/>
           <include name="signoutstarelabs"/>
           <include name="curriculumassign"/>
-          <include name="labenquiry"/>
-          <include name="deletecurriculum"/>
-          <include name="initial"/>
-          <include name="curriculumcreate"/>
-          <include name="learningpathcurriculum"/>
-          <include name="tearDown"/>
-          <include name="groupcreate"/>
         </methods>
       </class> <!-- facultytestcase.Smoketest_Facultyapp -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
