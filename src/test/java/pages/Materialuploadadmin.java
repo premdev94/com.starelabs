@@ -15,8 +15,8 @@ public class Materialuploadadmin extends Wrapper {
 	
 	By clickcurriculummodule=By.xpath("//span[text()=' Curriculum ']");
 	By display=By.xpath("//*[@aria-label='Default select example']");
-	By clicklast=By.xpath("//*[text()='»']");
-	By clickcurriculumname=By.xpath("//table/tbody/tr[last()]/td[1]");
+	By clicklast=By.xpath("//ul/li[3]/a");
+	By clickcurriculumname=By.xpath("//table/tbody/tr[1]/td[1]");
 	By clickdocs=By.xpath("//*[text()='Ref Doc']");
 	By linkclick=By.xpath("//*[text()='+']");
 	By url1=By.id("addUrl0");
