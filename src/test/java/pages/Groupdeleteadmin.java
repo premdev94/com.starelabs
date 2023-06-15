@@ -17,11 +17,10 @@ public class Groupdeleteadmin extends Wrapper {
 	By clickgroupsubmodule=By.xpath("//p[text()='Group']");
 	By groupdisplay=By.xpath("//select[@aria-label='Default select example']");
 	By pagelast=By.xpath("//*[text()='»']");
-	By groupdelete=By.xpath("//table/tbody/tr[last()]/td[4]/img[2]");
+	By groupdelete=By.xpath("//table/tbody/tr[14]/td[4]/div/img[2]");
 	By modalcontainer=By.className("modal-content");
 	By groupcfrmdelete=By.xpath("//button[text()='Confirm']");
 	By checkgrpdltepopupmsg=By.xpath("//*[text()=' Group deleted successfully ']");
-	
 	
 	public WebElement ClickStudentModule()
 	{
