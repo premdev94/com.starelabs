@@ -20,7 +20,7 @@ public class Curriculumcreateadmin extends Wrapper {
 	By curriculumcode=By.id("curriculumCode");
 	By labname=By.id("lab_name");
 	By facultyname=By.id("faculty_name");
-	By studentsenrolled=By.id("students_enrolled");
+	By studentsenrolled=By.id("allocated_students");
 	By startdate=By.xpath("//input[@formcontrolname='start_date']");
 	By enddate=By.xpath("//input[@formcontrolname='end_date']");
 	By labplanningcheckbox=By.xpath("(//div[@class='lab-planning-custom-checkbox'])[1]");

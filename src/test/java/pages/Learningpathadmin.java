@@ -32,7 +32,7 @@ public class Learningpathadmin extends Wrapper {
 	By savelearningpath=By.xpath("//*[text()=' Save ']");
 	By checkpopupmessage=By.xpath("//*[text()=' Learning Path saved successfully ']");
 	
-	
+
 	
 	public WebElement ClickCurriculumModule()
 	{

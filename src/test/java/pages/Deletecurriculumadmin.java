@@ -16,7 +16,7 @@ public class Deletecurriculumadmin extends Wrapper {
 	By clickcurriculummodule=By.xpath("//span[text()=' Curriculum ']");
 	By display=By.xpath("//*[@aria-label='Default select example']");
 	By clicklast=By.xpath("//ul/li[3]/a");
-	By clickdeleteicon=By.xpath("//table/tbody/tr[1]/td[8]/div/div/img");
+	By clickdeleteicon=By.xpath("//table/tbody/tr[1]/td[9]/div/div/img");
 	By deleteconfirm=By.xpath("//button[text()='Confirm']");
 	By checkpopupmsgafterdlte=By.xpath("//*[text()=' Curriculum deleted successfully ']");
 	

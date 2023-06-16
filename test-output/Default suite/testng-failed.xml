@@ -5,11 +5,16 @@
     <classes>
       <class name="admintestcase.Smoketest_Adminapp">
         <methods>
+          <include name="curriculumassign"/>
           <include name="initial"/>
-          <include name="groupdelete"/>
+          <include name="materialuploadcurriculum"/>
+          <include name="deletecurriculum"/>
+          <include name="curriculumcreate"/>
           <include name="teardown"/>
           <include name="tearDown"/>
+          <include name="signoutstarelabs"/>
           <include name="setup"/>
+          <include name="learningpathcurriculum"/>
         </methods>
       </class> <!-- admintestcase.Smoketest_Adminapp -->
     </classes>
