@@ -76,7 +76,7 @@ public class Smoketest_Studentapp extends Baseclass {
 		Thread.sleep(3000);
 		driver.findElement(By.xpath("//*[text()=' New ticket created successfully ']")).isDisplayed();
 		System.out.println(driver.findElement(By.xpath("//*[text()=' New ticket created successfully ']")).getText());
-		
+		Thread.sleep(4000);
 	}
 	
 	@Test (priority=4)
