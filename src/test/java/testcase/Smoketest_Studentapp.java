@@ -22,7 +22,7 @@ public class Smoketest_Studentapp extends Baseclass {
 		lp.Loginbutton().click();
 		Thread.sleep(2000);
 		Assert.assertEquals(driver.getCurrentUrl(), "https://dev.digilabs.ai/labs");
-		
+		Thread.sleep(3000);
 	}
 	
 	@Test (priority=2)
@@ -49,6 +49,7 @@ public class Smoketest_Studentapp extends Baseclass {
 		Thread.sleep(3000);
 		driver.findElement(By.xpath("//*[text()=' Upload successful ']")).isDisplayed();
 		System.out.println(driver.findElement(By.xpath("//*[text()=' Upload successful ']")).getText());
+		Thread.sleep(3000);
 		
 	}
 	
