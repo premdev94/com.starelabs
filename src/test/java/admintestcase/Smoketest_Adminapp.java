@@ -141,7 +141,7 @@ public class Smoketest_Adminapp extends Baseclass {
 		
 	}
 	
-	@Test (priority=4)
+	@Test (priority=5)
 	public void groupcreate() throws InterruptedException
 	{
 		Groupcreateadmin gca = new Groupcreateadmin(driver);
@@ -161,7 +161,7 @@ public class Smoketest_Adminapp extends Baseclass {
 		
 	}
 	
-	@Test (priority=5)
+	@Test (priority=6)
 	public void groupdelete() throws InterruptedException
 	{
 		Groupdeleteadmin gda = new Groupdeleteadmin(driver);
@@ -183,7 +183,7 @@ public class Smoketest_Adminapp extends Baseclass {
 		Thread.sleep(4000);
 	}
 	
-	@Test (priority=6)
+	@Test (priority=7)
 	public void gradesettingcreate() throws InterruptedException
 	{
 		Gradesettingcreateadmin gsca = new Gradesettingcreateadmin(driver);
@@ -204,7 +204,7 @@ public class Smoketest_Adminapp extends Baseclass {
 		Thread.sleep(4000);
 	}
 	
-	@Test (priority=7)
+	@Test (priority=8)
 	public void gradesettingdelete() throws InterruptedException
 	{
 		Gradesettingdeleteadmin gsda = new Gradesettingdeleteadmin(driver);
@@ -246,7 +246,7 @@ public class Smoketest_Adminapp extends Baseclass {
 		Thread.sleep(4000);
 	}*/
 	
-	@Test (priority=8)
+	@Test (priority=9)
 	public void curriculumcreate() throws InterruptedException
 	{
 		Curriculumcreateadmin cca = new Curriculumcreateadmin(driver);
@@ -291,7 +291,7 @@ public class Smoketest_Adminapp extends Baseclass {
 		
 	}
 	
-	@Test (priority=9)
+	@Test (priority=10)
 	public void curriculumassign() throws InterruptedException
 	{
 		Assigncurriculumadmin aca = new Assigncurriculumadmin(driver);
@@ -313,7 +313,7 @@ public class Smoketest_Adminapp extends Baseclass {
 		
 	}
 	
-	@Test (priority=10)
+	@Test (priority=11)
 	public void materialuploadcurriculum() throws InterruptedException
 	{
 		Materialuploadadmin muc = new Materialuploadadmin(driver);
@@ -342,7 +342,7 @@ public class Smoketest_Adminapp extends Baseclass {
 		Thread.sleep(4000);
 	}
 	
-	@Test (priority=11)
+	@Test (priority=12)
 	public void learningpathcurriculum() throws InterruptedException
 	{
 		Learningpathadmin lpa = new Learningpathadmin(driver);
@@ -376,7 +376,7 @@ public class Smoketest_Adminapp extends Baseclass {
 		Thread.sleep(4000);
 	}
 	
-	@Test (priority=12)
+	@Test (priority=13)
 	public void deletecurriculum() throws InterruptedException
 	{
 		Deletecurriculumadmin dca = new Deletecurriculumadmin(driver);
@@ -396,7 +396,7 @@ public class Smoketest_Adminapp extends Baseclass {
 		
 	}
 	
-	@Test (priority=13)
+	@Test (priority=14)
 	public void signoutstarelabs() throws InterruptedException {
 		 Thread.sleep(5000);
 		 Logout lout = new Logout(driver);

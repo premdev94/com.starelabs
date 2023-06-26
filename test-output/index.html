@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\premk\AppData\Local\Temp\testng-eclipse--531004986\testng-customsuite.xml</span>
+                    <span>C:\Users\premk\AppData\Local\Temp\testng-eclipse--864692170\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -102,22 +102,22 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="facultytestcase.Smoketest_Facultyapp" class="method navigator-link" hash-for-method="Facultylogin">Facultylogin</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="admintestcase.Smoketest_Adminapp" class="method navigator-link" hash-for-method="adminlogin">adminlogin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="facultytestcase.Smoketest_Facultyapp" class="method navigator-link" hash-for-method="signoutstarelabs">signoutstarelabs</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="admintestcase.Smoketest_Adminapp" class="method navigator-link" hash-for-method="groupcreate">groupcreate</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="facultytestcase.Smoketest_Facultyapp" class="method navigator-link" hash-for-method="studentcreate">studentcreate</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="admintestcase.Smoketest_Adminapp" class="method navigator-link" hash-for-method="groupdelete">groupdelete</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="facultytestcase.Smoketest_Facultyapp" class="method navigator-link" hash-for-method="studentdelete">studentdelete</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="admintestcase.Smoketest_Adminapp" class="method navigator-link" hash-for-method="signoutstarelabs">signoutstarelabs</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -135,14 +135,28 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">facultytestcase.Smoketest_Facultyapp</span>
+              <span class="class-name">admintestcase.Smoketest_Adminapp</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Facultylogin">
-                  </a> <!-- Facultylogin -->
-                  <span class="method-name">Facultylogin</span>
+                  <a name="adminlogin">
+                  </a> <!-- adminlogin -->
+                  <span class="method-name">adminlogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="groupcreate">
+                  </a> <!-- groupcreate -->
+                  <span class="method-name">groupcreate</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="groupdelete">
+                  </a> <!-- groupdelete -->
+                  <span class="method-name">groupdelete</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -152,26 +166,12 @@
                   <span class="method-name">signoutstarelabs</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="studentcreate">
-                  </a> <!-- studentcreate -->
-                  <span class="method-name">studentcreate</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="studentdelete">
-                  </a> <!-- studentdelete -->
-                  <span class="method-name">studentdelete</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\premk\AppData\Local\Temp\testng-eclipse--531004986\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\premk\AppData\Local\Temp\testng-eclipse--864692170\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -180,7 +180,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;facultytestcase.Smoketest_Facultyapp&quot;/&gt;
+      &lt;class name=&quot;admintestcase.Smoketest_Adminapp&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -222,26 +222,26 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'studentdelete')
-data.setCell(0, 2, 'facultytestcase.Smoketest_Facultyapp')
-data.setCell(0, 3, 16421);
+data.setCell(0, 1, 'groupdelete')
+data.setCell(0, 2, 'admintestcase.Smoketest_Adminapp')
+data.setCell(0, 3, 14721);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'studentcreate')
-data.setCell(1, 2, 'facultytestcase.Smoketest_Facultyapp')
-data.setCell(1, 3, 13024);
+data.setCell(1, 1, 'groupcreate')
+data.setCell(1, 2, 'admintestcase.Smoketest_Adminapp')
+data.setCell(1, 3, 12537);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'Facultylogin')
-data.setCell(2, 2, 'facultytestcase.Smoketest_Facultyapp')
-data.setCell(2, 3, 7114);
+data.setCell(2, 1, 'adminlogin')
+data.setCell(2, 2, 'admintestcase.Smoketest_Adminapp')
+data.setCell(2, 3, 7155);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'signoutstarelabs')
-data.setCell(3, 2, 'facultytestcase.Smoketest_Facultyapp')
-data.setCell(3, 3, 5262);
+data.setCell(3, 2, 'admintestcase.Smoketest_Adminapp')
+data.setCell(3, 3, 5256);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 41 seconds</span>
+              <span class="suite-total-time">Total running time: 39 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -267,50 +267,50 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">facultytestcase.Smoketest_Facultyapp</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">admintestcase.Smoketest_Adminapp</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">initial</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">setup</span>
-                <span class="method-start">117 ms</span>
+                <span class="method-start">134 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <span class="method-name">Facultylogin</span>
-                <span class="method-start">2138 ms</span>
+                <span class="method-name">adminlogin</span>
+                <span class="method-start">2322 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">teardown([TestResult name=Facultylogin status=SUCCESS method=Smoketest_Facultyapp.Facultylogin()[pri:1, insta...)</span>
-                <span class="method-start">9255 ms</span>
+                <span class="method-name">teardown([TestResult name=adminlogin status=SUCCESS method=Smoketest_Adminapp.adminlogin()[pri:1, instance:ad...)</span>
+                <span class="method-start">9480 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
-                <span class="method-name">studentcreate</span>
-                <span class="method-start">9266 ms</span>
+                <span class="method-name">groupcreate</span>
+                <span class="method-start">9493 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">teardown([TestResult name=studentcreate status=SUCCESS method=Smoketest_Facultyapp.studentcreate()[pri:2, ins...)</span>
-                <span class="method-start">22292 ms</span>
+                <span class="method-name">teardown([TestResult name=groupcreate status=SUCCESS method=Smoketest_Adminapp.groupcreate()[pri:4, instance:...)</span>
+                <span class="method-start">22031 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
-                <span class="method-name">studentdelete</span>
-                <span class="method-start">22294 ms</span>
+                <span class="method-name">groupdelete</span>
+                <span class="method-start">22031 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">teardown([TestResult name=studentdelete status=SUCCESS method=Smoketest_Facultyapp.studentdelete()[pri:4, ins...)</span>
-                <span class="method-start">38716 ms</span>
+                <span class="method-name">teardown([TestResult name=groupdelete status=SUCCESS method=Smoketest_Adminapp.groupdelete()[pri:5, instance:...)</span>
+                <span class="method-start">36753 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">signoutstarelabs</span>
-                <span class="method-start">38718 ms</span>
+                <span class="method-start">36754 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">teardown([TestResult name=signoutstarelabs status=SUCCESS method=Smoketest_Facultyapp.signoutstarelabs()[pri:...)</span>
-                <span class="method-start">43981 ms</span>
+                <span class="method-name">teardown([TestResult name=signoutstarelabs status=SUCCESS method=Smoketest_Adminapp.signoutstarelabs()[pri:13...)</span>
+                <span class="method-start">42011 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">44011 ms</span>
+                <span class="method-start">42043 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
