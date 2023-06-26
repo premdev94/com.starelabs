@@ -16,12 +16,11 @@ public class Studentdeleteadmin extends Wrapper {
 	By clickstdmodule=By.xpath("//span[text()='Student Management']");
 	By display=By.xpath("//*[@aria-label='Default select example']");
 	By paginationlast=By.xpath("//*[text()='»']");
-	By deletecheckbox=By.xpath("//table/tbody/tr[last()]/td[1]/div/input");
-	By deleteselected=By.xpath("//button[text()='Delete Selected']");
+	By deletecheckbox=By.xpath("//table/tbody/tr[last()]/td[8]/div/span");
 	By modalcontainer=By.className("modal-content");
-	By deleteconfirm=By.xpath("//button[text()='Confirm']");
-	By checkstddltepopupmsg=By.xpath("//*[text()=' student deleted Successfully ']");
-	
+	By deleteconfirm=By.xpath("//form/div[2]/div/div[2]/div[2]/span/img");
+	By checkstddltepopupmsg=By.xpath("//*[text()=' User deleted successfully ']");
+
 	
 	public WebElement ClickStudentModule()
 	{
@@ -42,10 +41,6 @@ public class Studentdeleteadmin extends Wrapper {
 	public WebElement DeleteCheckbox()
 	{
 		return driver.findElement(deletecheckbox);
-	}
-	public WebElement DeletedSelected()
-	{
-		return driver.findElement(deleteselected);
 	}
 	public WebElement DeleteConfirm()
 	{

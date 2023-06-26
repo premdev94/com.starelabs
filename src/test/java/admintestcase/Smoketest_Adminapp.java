@@ -96,9 +96,9 @@ public class Smoketest_Adminapp extends Baseclass {
 		sca.Modalcontainer();
 		Thread.sleep(2000);
 		String FN = RandomStringUtils.randomAlphabetic(8);
-		sca.StudentFirstName().sendKeys(FN);
+		sca.StudentFirstName().sendKeys("ZZ"+FN);
 		String LN = RandomStringUtils.randomAlphabetic(8);
-		sca.StudentLastName().sendKeys(LN);
+		sca.StudentLastName().sendKeys("ZZ"+LN);
 		String regno = RandomStringUtils.randomAlphanumeric(8);
 		sca.StudentRegisterNo().sendKeys(regno);
 		Random random = new Random(); 
@@ -119,7 +119,7 @@ public class Smoketest_Adminapp extends Baseclass {
 		
 	}
 	
-	/*@Test (priority=4)
+	@Test (priority=4)
 	public void studentdelete() throws InterruptedException
 	{
 		Studentdeleteadmin sda = new Studentdeleteadmin(driver);
@@ -129,8 +129,8 @@ public class Smoketest_Adminapp extends Baseclass {
 		display.selectByValue("10");
 		Thread.sleep(2000);
 		sda.PaginationLast().click();
+		Thread.sleep(3000);
 		sda.DeleteCheckbox().click();
-		sda.DeletedSelected().click();
 		sda.Modalcontainer();
 		Thread.sleep(2000);
 		sda.DeleteConfirm().click();
@@ -139,7 +139,7 @@ public class Smoketest_Adminapp extends Baseclass {
 		System.out.println(sda.CheckStudentDeletePopupMessage().getText());
 		Thread.sleep(4000);
 		
-	}*/
+	}
 	
 	@Test (priority=4)
 	public void groupcreate() throws InterruptedException
